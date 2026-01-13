@@ -1,0 +1,78 @@
+/* Global Colors Start */
+
+:root{
+    --light-white:#f8f8f8;
+    
+}
+
+/* Global Colors End */
+
+
+/* Global for all elements */
+
+html{
+    font-family: DM Sans,sans-serif;
+    font-size: 100%;
+}
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background:var(--light-white);
+    background-color: var(--light-white);
+    vertical-align: baseline;
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: center;
+}
+/* First Child Logo Start */
+.navbar #logo {
+    padding: 29px 24px;
+}
+.navbar #logo .img-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar #logo svg{
+    width: 150px;
+    height: fit-content;
+}
+/* First Child Logo End */
+
+/* First Child Menu Item Start */
+.navigation-pages-menu ul.main-menu{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.navigation-pages-menu ul.main-menu li.sub-menu svg{
+    width: 12px;
+    height: 12px;
+}
+
+/* .navbar .language_and_flag{
+    width: 25%;
+} */
+
+/* First Child Menu Item End */
