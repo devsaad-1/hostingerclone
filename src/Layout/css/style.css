@@ -1,35 +1,18 @@
 /* Global Colors Start */
-
-:root{
-    --light-white:#f8f8f8;
-    
-}
-
 /* Global Colors End */
 
 
 /* Global for all elements */
-
-html{
-    font-family: DM Sans,sans-serif;
-    font-size: 100%;
-}
-*,
-*::after,
-*::before{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 body{
-    background:var(--light-white);
-    background-color: var(--light-white);
-    vertical-align: baseline;
-    display: flex;
-    flex-direction: column;
-
-    height: 100vh;
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    
 }
 
 ul{
@@ -39,37 +22,113 @@ a{
     text-decoration: none;
     color: inherit;
 }
-/* Navbar */
-.navbar{
+/* Global Classes */
+.d-flex{
     display: flex;
-    justify-content: center;
 }
-/* First Child Logo Start */
-.navbar #logo {
-    padding: 29px 24px;
+.d-block{
+    display: block;
 }
-.navbar #logo .img-logo {
-    display: flex;
+.d-inline-block{
+    display: inline-block;
+}
+.d-none{
+    display: none;
+}
+
+.section{
+    padding: 60px 0;
+}
+
+.align-center{
     align-items: center;
+}
+.align-start{
+    align-items: flex-start;
+}
+.align-end{
+    align-items: flex-end;
+}
+.align-baseline{
+    align-items: baseline;
+}
+
+.justify-center{
     justify-content: center;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.justify-between{
+    justify-content: space-between;
+}
+
+.d-inline-flex{
+    display: inline-flex
+}
+
+.navbar{
+    background-color: white;
+    max-height: 72px;
+    max-height: 72px;
+    box-shadow: 0 4px 10px #0000001a;
+    gap: 40px;
 }
 .navbar #logo svg{
-    width: 150px;
-    height: fit-content;
+    min-width: 147px;
+    max-height: 30px;
 }
+
+.navbar  #logo {
+    padding:21px 24px;
+}
+.navbar .navigation-pages-menu {
+    padding:12px 24px;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.nabnar .navigation-pages-menu  {
+    max-height: 72px;
+    max-height: 72px;
+
+}
+.navbar .navigation-pages-menu .list-item a {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    color:#222225;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
 /* First Child Logo End */
 
-/* First Child Menu Item Start */
-.navigation-pages-menu ul.main-menu{
+/* .navigation-pages-menu{
+    background-color: blue;
+} */
+/* Second Child Menu Item Start */
+/* .navigation-pages-menu ul.main-menu{
     display: flex;
     align-items: flex-start;
     
-}
+} */
 
-.navigation-pages-menu ul.main-menu li.sub-menu svg{
+/* .navigation-pages-menu ul.main-menu li.sub-menu svg{
     width: 12px;
     height: 12px;
-}
+} */
+/* .user-account-preferences{
+    background-color: orange;
+} */
 
 /* .navbar .language_and_flag{
     width: 25%;
